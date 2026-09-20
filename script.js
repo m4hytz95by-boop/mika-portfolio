@@ -17,7 +17,7 @@ cv:{
 },
 contact:{
  title:'Yhteys',
- html:`<div class="contact-links"><a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com</a><a href="tel:+358407515308">040 751 5308</a><a href="https://www.linkedin.com/in/mika-m%C3%A4h%C3%B6nen-0b94bb107" target="_blank" rel="noopener">LinkedIn ↗</a></div>`
+ html:`<div class="contact-links"><a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com</a><a href="https://www.linkedin.com/in/mika-m%C3%A4h%C3%B6nen-0b94bb107" target="_blank" rel="noopener">LinkedIn ↗</a></div>`
 }
 };
 const panel=document.querySelector('#panel'),box=document.querySelector('#panel-content');
