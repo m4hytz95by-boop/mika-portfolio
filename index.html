@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mika Mähönen – kokenut palkkahallinnon asiantuntija." />
+  <title>Mika Mähönen | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="desktop">
+    <div class="shade"></div>
+    <header class="topbar">
+      <div class="brand">MM</div>
+      <div class="status">PORTFOLIO / 2026</div>
+    </header>
+    <section class="hero">
+      <p class="eyebrow">PALKANLASKENTA · TES · JÄRJESTELMÄT · PROSESSIT</p>
+      <h1>Mika<br>Mähönen</h1>
+      <p class="role">Kokenut palkkahallinnon asiantuntija</p>
+      <p class="intro">Rakennan selkeitä toimintatapoja monivaiheisiin prosesseihin ja kehitän järjestelmiä niin, että työ sujuu tehokkaammin ja virheriski pienenee.</p>
+    </section>
+    <nav class="dock" aria-label="Portfolio">
+      <button data-panel="about">Minusta</button>
+      <button data-panel="experience">Kokemus</button>
+      <button data-panel="skills">Osaaminen</button>
+      <button data-panel="cv">CV</button>
+      <button data-panel="contact">Yhteys</button>
+    </nav>
+    <section class="panel" id="panel" aria-live="polite">
+      <button class="close" aria-label="Sulje">×</button>
+      <div id="panel-content"></div>
+    </section>
+    <footer>Built with AI · GitHub · Vercel</footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
