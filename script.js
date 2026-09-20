@@ -21,5 +21,8 @@ contact:{
 }
 };
 const panel=document.querySelector('#panel'),box=document.querySelector('#panel-content');
+const closePanel=()=>panel.classList.remove('open');
 document.querySelectorAll('[data-panel]').forEach(b=>b.addEventListener('click',()=>{const item=content[b.dataset.panel];box.innerHTML='<h2>'+item.title+'</h2>'+item.html;panel.classList.add('open')}));
-document.querySelector('.close').addEventListener('click',()=>panel.classList.remove('open'));
+document.querySelector('.close').addEventListener('click',closePanel);
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closePanel()});
+document.addEventListener('click',e=>{if(panel.classList.contains('open')&&!panel.contains(e.target)&&!e.target.closest('[data-panel]'))closePanel()});
