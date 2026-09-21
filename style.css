@@ -21,3 +21,40 @@
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
 
 @media(max-width:700px){.desktop{background-position:58% center}.shade{background:linear-gradient(180deg,rgba(14,17,11,.62) 0%,rgba(18,22,14,.46) 52%,rgba(14,16,11,.58) 100%)}}
+
+/* Mobile navigation fix */
+@media(max-width:700px){
+  .dock{
+    left:10px;
+    right:10px;
+    bottom:max(10px,env(safe-area-inset-bottom));
+    width:auto;
+    transform:none;
+    display:grid;
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:2px;
+    overflow:visible;
+    z-index:50;
+  }
+  .dock button{
+    width:100%;
+    min-width:0;
+    min-height:48px;
+    padding:8px 3px;
+    font-size:clamp(.62rem,2.7vw,.78rem);
+    line-height:1.15;
+    white-space:normal;
+    touch-action:manipulation;
+    -webkit-tap-highlight-color:transparent;
+  }
+  .panel{
+    z-index:60;
+    bottom:calc(70px + env(safe-area-inset-bottom));
+  }
+  .hero{
+    padding-bottom:150px;
+  }
+}
+@media(max-width:390px){
+  .dock button{font-size:.6rem;padding-inline:2px}
+}
