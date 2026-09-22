@@ -11,10 +11,6 @@ skills:{
  title:'Osaaminen',
  html:`<div class="tags"><span>Palkanlaskenta</span><span>TES-tulkinta</span><span>Myyntilaskutus</span><span>Monivaiheisten prosessien hallinta</span><span>Järjestelmien kehittäminen</span><span>Saarni Likeit</span><span>Procountor</span><span>Excel</span><span>Easoft</span><span>Microsoft 365</span></div><p class="skill-note">TES-kokemusta mm. leipomo-, talonrakennus-, pelti- ja eristys-, teknologiateollisuus- sekä kaupan alalta.</p>`
 },
-cv:{
- title:'CV',
- html:`<p>CV lisätään tähän seuraavassa vaiheessa sekä selaimessa katseltavaksi että ladattavaksi.</p>`
-},
 contact:{
  title:'Yhteys',
  html:`<div class="contact-links"><a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com</a><a href="https://www.linkedin.com/in/mika-m%C3%A4h%C3%B6nen-0b94bb107" target="_blank" rel="noopener">LinkedIn ↗</a></div>`
