@@ -21,7 +21,7 @@
       <h1 id="name">Mika<br>Mähönen</h1>
       <p class="role">Kokenut palkkahallinnon asiantuntija</p>
       <p class="intro">Yhdistän palkkahallinnon tarkkuuden, henkilöstöpalvelualan tuntemuksen ja käytännön kehittämisotteen. Teen monivaiheisesta työstä selkeämpää ihmisille, jotka sitä tekevät.</p>
-      <a class="hero-contact" href="mailto:mika.mahonen@protonmail.com">Ota yhteyttä <span aria-hidden="true">↗</span></a>
+      <button class="hero-contact" type="button" data-panel="contact" aria-controls="contact" aria-expanded="false">Ota yhteyttä <span aria-hidden="true">↗</span></button>
       <p class="cv-note">CV ja tarkemmat tiedot pyynnöstä.</p>
     </section>
     <nav class="dock" aria-label="Tutustu asiantuntijaprofiiliin">
@@ -63,8 +63,24 @@
         <p class="panel-eyebrow">YHTEYS</p>
         <h2 id="contact-title" tabindex="-1">Jatketaanko keskustelua?</h2>
         <p class="panel-lead">Etsitkö palkkahallinnon osaajaa, joka ymmärtää henkilöstöpalvelualaa ja haluaa kehittää yhteisiä toimintatapoja? Kerron mielelläni lisää.</p>
-        <div class="contact-links"><a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com <span aria-hidden="true">↗</span></a></div>
-        <p class="goal">Saat minulta CV:n, tarkemmat tiedot osaamisestani ja muut yhteystiedot pyytämällä sähköpostitse.</p>
+        <p>Voit kertoa avoimesta tehtävästä, pyytää CV:n tai ehdottaa keskustelua. Jätä yhteystietosi, niin voin vastata sinulle.</p>
+        <form class="contact-form" action="https://formsubmit.co/mika.mahonen@protonmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Yhteydenotto Mikan portfoliosivulta" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_url" value="https://mika-portfolio-livid.vercel.app/" />
+          <div class="form-trap" aria-hidden="true"><label>Jätä tämä kenttä tyhjäksi<input type="text" name="_honey" tabindex="-1" autocomplete="off" /></label></div>
+          <div class="form-grid">
+            <label for="contact-name">Nimi <span class="required-note">(pakollinen)</span><input id="contact-name" name="name" autocomplete="name" maxlength="120" required /></label>
+            <label for="contact-company">Yritys<input id="contact-company" name="Yritys" autocomplete="organization" maxlength="160" /></label>
+            <label for="contact-email">Sähköposti <span class="required-note">(pakollinen)</span><input id="contact-email" type="email" name="email" autocomplete="email" maxlength="254" required /></label>
+            <label for="contact-phone">Puhelin<input id="contact-phone" type="tel" name="Puhelin" autocomplete="tel" maxlength="50" /></label>
+          </div>
+          <label for="contact-message">Viesti <span class="required-note">(pakollinen)</span><textarea id="contact-message" name="Viesti" rows="5" maxlength="5000" placeholder="Millaisesta tehtävästä tai yhteistyöstä haluaisit keskustella?" required></textarea></label>
+          <p class="form-note" id="form-note">Viesti ja yhteystietosi välitetään sähköpostiini FormSubmit-palvelun kautta. Lähetyksen yhteydessä siirryt palvelun roskapostitarkistukseen ja vahvistussivulle. Käytän tietoja yhteydenottoosi vastaamiseen.</p>
+          <button class="form-submit" type="submit" aria-describedby="form-note">Lähetä viesti <span aria-hidden="true">↗</span></button>
+        </form>
+        <div class="contact-links"><a href="mailto:mika.mahonen@protonmail.com">Tai kirjoita suoraan: mika.mahonen@protonmail.com <span aria-hidden="true">↗</span></a></div>
+        <p class="goal">CV:n, tarkemmat tiedot osaamisestani ja muut yhteystiedot saat pyytämällä.</p>
       </article>
     </section>
     <noscript><p class="noscript-note">Lisätietopainikkeet tarvitsevat JavaScriptin. CV:n ja lisätietoja saat sähköpostitse: <a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com</a>.</p></noscript>

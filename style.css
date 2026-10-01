@@ -213,3 +213,21 @@ footer{position:fixed;z-index:2;right:4vw;bottom:18px;font-size:.62rem;color:var
   .panel{top:auto;bottom:calc(80px + env(safe-area-inset-bottom));max-height:calc(100dvh - 108px - env(safe-area-inset-bottom));padding:0 20px 24px}
   .panel h2{font-size:1.7rem}
 }
+
+/* Contact form uses the same calm palette as the profile. */
+.hero-contact{cursor:pointer;text-align:left}
+.contact-form{margin:24px 0}
+.form-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.contact-form label{display:block;font-size:.88rem;line-height:1.5;color:var(--text);margin-bottom:16px}
+.form-grid label{margin:0}
+.required-note{font-size:.73rem;color:var(--muted)}
+.contact-form input:not([type="hidden"]),.contact-form textarea{display:block;width:100%;min-width:0;margin-top:7px;padding:12px;border:1px solid #827b60;border-radius:8px;background:#171d14;color:var(--text);font:inherit;font-size:1rem}
+.contact-form textarea{resize:vertical;min-height:140px;line-height:1.5}
+.contact-form>label{margin-top:16px}
+.contact-form textarea::placeholder{color:#aaa793}
+.contact-form input:focus-visible,.contact-form textarea:focus-visible,.form-submit:focus-visible{outline:2px solid #e0d5a7;outline-offset:3px}
+.contact-form .form-note{font-size:.76rem;line-height:1.6;margin:12px 0 18px}
+.form-submit{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:12px 20px;border:1px solid #b2a982;border-radius:9px;background:#a69d78;color:#171b14;cursor:pointer;font-weight:600}
+.form-submit:hover{background:#c0b68e}
+.form-trap{display:none}
+@media(max-width:700px){.form-grid{grid-template-columns:1fr;gap:14px}.form-submit{width:100%}.contact-form input:not([type="hidden"]),.contact-form textarea{font-size:16px}}

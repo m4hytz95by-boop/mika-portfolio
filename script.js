@@ -19,7 +19,7 @@ buttons.forEach(button => {
     }
     opener = button;
     sections.forEach(item => { item.hidden = item !== section; });
-    buttons.forEach(item => item.setAttribute('aria-expanded', String(item === button)));
+    buttons.forEach(item => item.setAttribute('aria-expanded', String(item.dataset.panel === button.dataset.panel)));
     panel.hidden = false;
     panel.setAttribute('aria-labelledby', section.querySelector('h2').id);
     panel.scrollTop = 0;
