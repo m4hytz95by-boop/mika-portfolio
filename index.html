@@ -3,35 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Mika Mähönen – kokenut palkkahallinnon asiantuntija. Palkanlaskentaa, TES-tulkintaa, järjestelmäkehitystä ja monivaiheisten prosessien hallintaa." />
-  <title>Mika Mähönen | Portfolio</title>
+  <meta name="description" content="Mika Mähönen – palkkahallinnon asiantuntija. Henkilöstöpalvelualan tuntemusta, harkittua ongelmanratkaisua ja sujuvampia toimintatapoja. CV pyynnöstä." />
+  <meta name="theme-color" content="#1c2118" />
+  <title>Mika Mähönen | Palkkahallinto ja henkilöstöpalvelut</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
 </head>
 <body>
   <main class="desktop">
-    <div class="shade"></div>
+    <div class="shade" aria-hidden="true"></div>
     <header class="topbar">
-      <div class="brand">MM</div>
-      <div class="status">PORTFOLIO / 2026</div>
+      <div class="brand" aria-hidden="true">MM</div>
+      <div class="status">ASIANTUNTIJAPROFIILI</div>
     </header>
-    <section class="hero">
-      <p class="eyebrow">PALKANLASKENTA · TES · JÄRJESTELMÄT · PROSESSIT</p>
-      <h1>Mika<br>Mähönen</h1>
+    <section class="hero" aria-labelledby="name">
+      <p class="eyebrow">PALKKAHALLINTO · HENKILÖSTÖPALVELUT · KEHITTÄMINEN</p>
+      <h1 id="name">Mika<br>Mähönen</h1>
       <p class="role">Kokenut palkkahallinnon asiantuntija</p>
-      <p class="intro">En ainoastaan laske palkkoja, vaan hallitsen myös niiden taustalla olevat työehtosopimukset, asiakaskohtaiset toimintatavat, järjestelmäasetukset ja laskutusprosessit.</p>
+      <p class="intro">Yhdistän palkkahallinnon tarkkuuden, henkilöstöpalvelualan tuntemuksen ja käytännön kehittämisotteen. Teen monivaiheisesta työstä selkeämpää ihmisille, jotka sitä tekevät.</p>
+      <a class="hero-contact" href="mailto:mika.mahonen@protonmail.com">Ota yhteyttä <span aria-hidden="true">↗</span></a>
+      <p class="cv-note">CV ja tarkemmat tiedot pyynnöstä.</p>
     </section>
-    <nav class="dock" aria-label="Portfolio">
-      <button data-panel="about">Minusta</button>
-      <button data-panel="experience">Kokemus</button>
-      <button data-panel="skills">Osaaminen</button>
-      <button data-panel="contact">Yhteys</button>
+    <nav class="dock" aria-label="Tutustu asiantuntijaprofiiliin">
+      <button type="button" data-panel="about" aria-controls="about" aria-expanded="false">Esittely</button>
+      <button type="button" data-panel="skills" aria-controls="skills" aria-expanded="false">Osaaminen</button>
+      <button type="button" data-panel="approach" aria-controls="approach" aria-expanded="false">Työote</button>
+      <button type="button" data-panel="contact" aria-controls="contact" aria-expanded="false">Yhteys</button>
     </nav>
-    <section class="panel" id="panel" aria-live="polite">
-      <button class="close" aria-label="Sulje">×</button>
-      <div id="panel-content"></div>
+    <section class="panel" id="panel" aria-label="Lisätietoja" hidden>
+      <div class="panel-toolbar"><button class="close" type="button" aria-label="Sulje lisätiedot">×</button></div>
+      <article id="about" hidden aria-labelledby="about-title">
+        <p class="panel-eyebrow">ASIANTUNTIJUUS</p>
+        <h2 id="about-title" tabindex="-1">Tarkkuutta ja kokonaisuuksien ymmärrystä.</h2>
+        <p class="panel-lead">Olen palkkahallinnon asiantuntija, jolla on vahva käytännön kokemus henkilöstöpalvelualalta. Työssäni yhdistyvät palkanmaksun päävastuu, työehtosopimusten tulkinta, tiiminvetovastuu ja toimintatapojen kehittäminen.</p>
+        <p>Henkilöstövuokrauksessa palkkahallinto liittyy tiiviisti työaikatietoihin, asiakaskohtaisiin käytäntöihin ja laskutukseen. Ymmärrän näiden yhteydet ja osaan selvittää, miten yhdessä vaiheessa tehty ratkaisu vaikuttaa kokonaisuuteen.</p>
+        <p>Pidän tärkeänä, että tieto on oikein ja että sen perusteet voidaan selittää ymmärrettävästi. Se tukee työntekijän luottamusta, yhteistyötä ja yrityksen arjen sujuvuutta.</p>
+        <p class="goal">Minua kiinnostavat tehtävät, joissa palkkahallinnon osaaminen, henkilöstöhallinnon arki ja käytännön kehittäminen kohtaavat.</p>
+      </article>
+      <article id="skills" hidden aria-labelledby="skills-title">
+        <p class="panel-eyebrow">OSAAMINEN</p>
+        <h2 id="skills-title" tabindex="-1">Palkasta koko prosessiin.</h2>
+        <div class="feature-grid">
+          <section class="feature-card"><h3>Palkkahallinto ja TES</h3><p>Työsuhteen palkka-asiat, työaikojen tulkinta ja palkkaprosessin oikeellisuus. Sovellan työehtosopimuksia käytännön tilanteisiin ja selvitän poikkeamien vaikutukset.</p></section>
+          <section class="feature-card"><h3>Henkilöstöpalvelualan kokonaisuus</h3><p>Ymmärrän työaikatietojen, palkanmaksun ja asiakaslaskutuksen väliset yhteydet. Huomioin sekä työntekijän että asiakasyrityksen näkökulman.</p></section>
+          <section class="feature-card"><h3>Järjestelmät ja työnkulut</h3><p>Määrittelen ja kehitän järjestelmien toimintaa käytännön tarpeista lähtien. Erityisosaamistani on Saarni Likeitin sovittaminen palkka- ja laskutusprosesseihin.</p></section>
+          <section class="feature-card"><h3>Työn ohjaus ja yhteistyö</h3><p>Kokemukseni kattaa työnjaon, perehdytyksen ja laadun seurannan. Teen yhteistyötä eri toimintojen kanssa ja autan selkiyttämään yhteisiä käytäntöjä.</p></section>
+        </div>
+        <p class="goal">Tarkempi työhistoriani sekä järjestelmä- ja TES-osaamiseni löytyvät pyydettävästä CV:stä.</p>
+      </article>
+      <article id="approach" hidden aria-labelledby="approach-title">
+        <p class="panel-eyebrow">TYÖOTE</p>
+        <h2 id="approach-title" tabindex="-1">Selvitän syyn. Selkeytän tekemistä.</h2>
+        <p class="panel-lead">Minua kiinnostaa, miksi työ sujuu tai takkuaa. Kehittämisen lähtökohta on arjen ymmärtäminen: missä tieto syntyy, kuka sitä tarvitsee ja missä kohtaa epäselvyys alkaa.</p>
+        <div class="entry"><h3>Poikkeamasta sen syyhyn</h3><p>Kun tiedot eivät täsmää, vertaan aineistoja ja jäljitän eron alkuperän. Tarkastelen samalla, vaikuttaako se palkkaan, laskutukseen tai seuraavaan työvaiheeseen. Näin korjaus kohdistuu myös ongelman syyhyn.</p></div>
+        <div class="entry"><h3>Käytännöistä ymmärrettäviä</h3><p>Selkeä työnjako, perustellut toimintatavat ja ennakointi helpottavat yhteistä työtä. Arvostan keskustelua, jossa voi kysyä, jakaa tietoa ja tuoda esiin toisen näkökulman.</p></div>
+        <div class="entry"><h3>Digityökalut harkitusti käyttöön</h3><p>Hyödynnän tekoälyä tiedonhaun, vertailun ja kehittämisen tukena. Arvioin ehdotuksia kriittisesti ja tarkistan johtopäätökset lähdeaineistosta. Työkalun arvo näkyy siinä, helpottaako se käytännön työtä.</p></div>
+      </article>
+      <article id="contact" hidden aria-labelledby="contact-title">
+        <p class="panel-eyebrow">YHTEYS</p>
+        <h2 id="contact-title" tabindex="-1">Jatketaanko keskustelua?</h2>
+        <p class="panel-lead">Etsitkö palkkahallinnon osaajaa, joka ymmärtää henkilöstöpalvelualaa ja haluaa kehittää yhteisiä toimintatapoja? Kerron mielelläni lisää.</p>
+        <div class="contact-links"><a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com <span aria-hidden="true">↗</span></a></div>
+        <p class="goal">Saat minulta CV:n, tarkemmat tiedot osaamisestani ja muut yhteystiedot pyytämällä sähköpostitse.</p>
+      </article>
     </section>
-    <footer>Built with AI · GitHub · Vercel</footer>
+    <noscript><p class="noscript-note">Lisätietopainikkeet tarvitsevat JavaScriptin. CV:n ja lisätietoja saat sähköpostitse: <a href="mailto:mika.mahonen@protonmail.com">mika.mahonen@protonmail.com</a>.</p></noscript>
+    <footer>MIKA MÄHÖNEN · PALKKAHALLINTO</footer>
   </main>
-  <script src="script.js"></script>
 </body>
 </html>
